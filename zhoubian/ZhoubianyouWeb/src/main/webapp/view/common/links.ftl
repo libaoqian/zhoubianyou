@@ -1,54 +1,34 @@
 <#include "/common/taglibs.ftl" />
-
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
   <meta charset="utf-8">
-  <title>F.A.Wholesale后台管理系统</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="${contextPath}/static/adminlte/dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="${contextPath}/static/adminlte/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="${contextPath}/static/adminlte/dist/css/skins/skin-blue.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- iCheck -->
+	<script src="https://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
 	
-	<link href="${contextPath}/view/assets/css/style.css" rel="stylesheet">
-	<link href="${contextPath}/view/assets/css/bootstrap.css" rel="stylesheet">
-	<link href="${contextPath}/view/assets/css/jquery-confirm.min.css" rel="stylesheet">
-
+	<link href="https://cdn.bootcss.com/datatables/1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/datatables/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.bootcss.com/datatables/1.10.16/js/dataTables.bootstrap.js"></script>
+	<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
 	
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="../view/assets/js/html5shiv.js"></script>
-  <![endif]-->
-
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <script src="${contextPath}/view/assets/js/jquery.min.js"></script>
-  <script src="${contextPath}/view/assets/js/bootstrap.min.js"></script>
-  <script src="${contextPath}/view/assets/js/bootstrap-paginator.js"></script>
-  <script src="${contextPath}/view/assets/js/jquery-confirm.min.js"></script>
-  <script type="text/javascript" >
-  	function checkInputLength(obj,length){
-	var text = $(obj).val();
-	var content = "输入不能超过"+ length +"个!";
-	if(text.length >= length){
-		$.confirm({
-		    title: false,
-		    content: content,
-		    confirmButton: '确定',
-			cancelButton: '取消',
-		    confirm: function(){
-		        
-		    }
-		});
-		}
-	}
-  </script>
+	<script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+	<script src="${contextPath}/static/adminlte/dist/js/demo.js"></script>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
