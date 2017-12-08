@@ -44,7 +44,7 @@ public class SignController extends BaseController {
 	}
 	@RequestMapping("error")
 	public String error(){
-		System.out.println("登录事变");
+		System.out.println("登录失败");
 		
 		return "index";
 	}
